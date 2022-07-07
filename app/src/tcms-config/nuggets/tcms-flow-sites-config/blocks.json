@@ -1,0 +1,17 @@
+{
+    "blocks": [
+        {
+            "id": "FgHzcH0V",
+            "type": "tcmsFlowSiteConfig",
+            "data": {
+                "defaultHost": "",
+                "hostSites": {
+                    "localhost": "dev"
+                },
+                "siteFlows": {
+                    "dev": "F62d_Y4Ip_kzXF_y4u1_JgUB"
+                }
+            }
+        }
+    ]
+}
