@@ -1,6 +1,6 @@
-# TachyonCMS Flow Site Server (flow-sites)
+# TachyonCMS
 
-Serves blog-type, single-page sites under unique domains. 
+Serves blog-type, single-page sites under unique domains.
 
 ## Install the dependencies
 ```bash
