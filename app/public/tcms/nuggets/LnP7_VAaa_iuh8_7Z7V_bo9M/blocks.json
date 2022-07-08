@@ -1,0 +1,271 @@
+{
+  "blocks": [
+    {
+      "id": "t_hspJZ9Qs",
+      "type": "paragraph",
+      "data": {
+        "text": "This is the sixth and final article in a&nbsp; series about my attempt to find a domain parking solution that allowed custom content while still maintaining a low cost for each domain. I was hoping to keep cost per domain to pennies a month, across hundreds of domains that still adds up."
+      }
+    },
+    {
+      "id": "qQWu1KYqPs",
+      "type": "paragraph",
+      "data": {
+        "text": "In the end I was able to come up with a hosting solution that is entirely free, subject to bandwidth limits. having no fixed costs outside of the domain registration fee makes parking a questionable name a more palatable."
+      }
+    },
+    {
+      "id": "cmZNUjXely",
+      "type": "header",
+      "data": {
+        "text": "The Pieces",
+        "level": 2
+      }
+    },
+    {
+      "id": "GzCbbS0AgV",
+      "type": "paragraph",
+      "data": {
+        "text": "The TachyonCMS project provides the free tools to create, manage and serve TachyonCMS content. That content is then deployed through the cloud providers of your choice. I'll be using GitHub ad Netlify in this example. As long as you stay within the free tier of your cloud providers service there isn't any charge to get your content out there. All of these pieces scale easily using well proven network technologies."
+      }
+    },
+    {
+      "id": "etCjFmTzKH",
+      "type": "paragraph",
+      "data": {
+        "text": "None of these pieces take more than 15 minutes to complete from scratch. If you already have some of the providers setup the whole process should take less than 30 minutes."
+      }
+    },
+    {
+      "id": "lyIgh7z-kY",
+      "type": "list",
+      "data": {
+        "style": "ordered",
+        "items": [
+          "TachyonCMS Multi-Site App",
+          "TachyonCMS Editor",
+          "Git Provider - GitHub",
+          "Cloud CDN Provider - Netlify<br>",
+          "DNS Provider - Domain registrar"
+        ]
+      }
+    },
+    {
+      "id": "eVka8ahFMq",
+      "type": "header",
+      "data": {
+        "text": "TachyonCMS Multi-Site App",
+        "level": 3
+      }
+    },
+    {
+      "id": "0PKbRPLb4V",
+      "type": "paragraph",
+      "data": {
+        "text": "The multi-site app is a basic Quasar 2 framework application using Vue3. It has all the power and potential of the Quasar framework, with a little code added to fetch and understand TachyonCMS data."
+      }
+    },
+    {
+      "id": "cgzC6qMkjr",
+      "type": "list",
+      "data": {
+        "style": "unordered",
+        "items": [
+          "Supports unlimited domains from one deployed site, this is great for domainers needing to park their domains easily.",
+          "Serves static or semi-static content. For entirely static content each page gets compiled into an a physical HTML page. For semi-static content a static site is created routing calls to a single page that dynamically loads the content from static JSON files. Those JSON files can be updated without recompiling or rebuilding the app.",
+          "Full Quasar support, anything you could do with a normal Quasar app can be done with this app. It also means you have access to the multimedia tools developed for the TachyonCMS Editor."
+        ]
+      }
+    },
+    {
+      "id": "GU5YmaeQ3p",
+      "type": "header",
+      "data": {
+        "text": "Fork the Multi Site App Repo",
+        "level": 4
+      }
+    },
+    {
+      "id": "ZoiG2mv0cO",
+      "type": "paragraph",
+      "data": {
+        "text": "There is an option to <b>Fork</b>&nbsp;in the upper right corner, use that to fork the repo to one of your own. This will allow you to customize the site as much as you'd like and manage those changes in your own repo. You could clone the code as well but wouldn't be able to save your change back to GitHub as quickly."
+      }
+    },
+    {
+      "id": "CAZDIjsdRz",
+      "type": "header",
+      "data": {
+        "text": "Clone Your Repo",
+        "level": 4
+      }
+    },
+    {
+      "id": "uulS35vpU6",
+      "type": "paragraph",
+      "data": {
+        "text": "By doing the work in a fork you can easily style and modify the Quasar pp to your hearts content, while also being able to cherry pick new render components from our parent repo."
+      }
+    },
+    {
+      "id": "OXkOed218e",
+      "type": "header",
+      "data": {
+        "text": "TachyonCMS Editor",
+        "level": 3
+      }
+    },
+    {
+      "id": "CyyjOXrayP",
+      "type": "paragraph",
+      "data": {
+        "text": "TachyonCMS maintains a free CMS web-application at <a href=\"https://www.tachyoncms.org/#/\">TachyonCMS.org</a>. Anyone can to use this app to manage as many local projects as they'd like. <b>The content data never gets transmitted to the server.</b>"
+      }
+    },
+    {
+      "id": "GpdRhnfr2c",
+      "type": "paragraph",
+      "data": {
+        "text": "The user simply visits the site and selects a local directory they would like to use for content. If the directory hasn't been used by TachyonCMS before the app will create three new folders named <i>flows</i>, <i>nuggets </i>and <i>tags</i>. If the app finds existing directories with those names it uses them."
+      }
+    },
+    {
+      "id": "ATpQGMZJwy",
+      "type": "paragraph",
+      "data": {
+        "text": "If you <i>wanted to </i>you could clone the TachyonCMS monorepo and run the editor-ui code locally. Unless you plan on also modifying the editor code there is no reason to checkout the much larger project. Even as the primary developer I seldom use the local version, the hosted version is super convenient."
+      }
+    },
+    {
+      "id": "dHIEL9Rp5-",
+      "type": "header",
+      "data": {
+        "text": "Content Directories for Multi-Site App",
+        "level": 4
+      }
+    },
+    {
+      "id": "fZx_4SQYfj",
+      "type": "paragraph",
+      "data": {
+        "text": "When the editor being used with the TachyonCMS Multi-Site App there is are three directories you will be working with, you can have both open in different windows or tabs.<br><i>webapp/public/tcms<br></i><i><b>webapp/src/tcms<br></b></i><b><i>webapp/src/tcms-config</i></b><i><br></i>"
+      }
+    },
+    {
+      "id": "Bq3Cr_CQBm",
+      "type": "paragraph",
+      "data": {
+        "text": "<b><i></i></b>The semi-static flows you create will go in&nbsp;<b>webapp/public/tcms</b>, the&nbsp; JSON files then get served as-is through the deployed app as static content.&nbsp;If your are hosting that data someplace like AWS S3 you can update or add to the data without recompiling the application. Netlify doesn't provide direct access to the files so you must use build minutes to deploy each change."
+      }
+    },
+    {
+      "id": "_vil62kroR",
+      "type": "paragraph",
+      "data": {
+        "text": "The flows you want to deploy as static precompiled HTML pages go in&nbsp;<b>webapp/src/tcms.&nbsp;</b>These JSON files are not directly accessible once deployed. Fully static pages are best for SEO."
+      }
+    },
+    {
+      "id": "WoPj0PJlsR",
+      "type": "paragraph",
+      "data": {
+        "text": "The&nbsp;<i>webapp/src/tcms-config</i> contains a special Flow used to configure the Multi-Site app. We currently use the JSON editor to modify the config object as its a pretty simple format. As it becomes more complex we'll create a custom editor module.&nbsp;"
+      }
+    },
+    {
+      "id": "eZfY7JsBts",
+      "type": "header",
+      "data": {
+        "text": "Create Site Flows",
+        "level": 4
+      }
+    },
+    {
+      "id": "UEM0uTuvBr",
+      "type": "paragraph",
+      "data": {
+        "text": "Use the hosted editor to open the cloned project's&nbsp;<i><b>webapp/public/tcms</b> </i>directory."
+      }
+    },
+    {
+      "id": "htjMZvAwdo",
+      "type": "paragraph",
+      "data": {
+        "text": "The create one or more flows, each representing the single-page content for a parked domain. You need to reference the flow's ID so we need start by creating the flows. It isn't important to have all the content at this point, a simple header will let you know the page is loading correctly."
+      }
+    },
+    {
+      "id": "FCSDDFIdch",
+      "type": "header",
+      "data": {
+        "text": "Git Provider - GitHub",
+        "level": 3
+      }
+    },
+    {
+      "id": "PrnK5tVu7N",
+      "type": "paragraph",
+      "data": {
+        "text": "A git provider acts as the free offsite storage and intermediary between your local content and a cloud CDN. Your choices may be driven what CDN you are deploying to, or visa-versa. I went with GitHub mainly because that's what I've used in the past. Many uses fall within their free plan, at least initially."
+      }
+    },
+    {
+      "id": "cn7BBKwHrm",
+      "type": "paragraph",
+      "data": {
+        "text": "TachyonCMS is purposefully agnostic about how the content data gets from the local file to the CDN. It should be easy to fit it into any process already using git."
+      }
+    },
+    {
+      "id": "A5KvblhmOV",
+      "type": "paragraph",
+      "data": {
+        "text": "Using git allows for defining multiple variants of your content and creating an audit and approval trail of all content changes."
+      }
+    },
+    {
+      "id": "J-aFlko_SS",
+      "type": "paragraph",
+      "data": {
+        "text": "The TachyonCMS project will document publishing through various git providers as we progress."
+      }
+    },
+    {
+      "id": "jW4UXjbfZz",
+      "type": "header",
+      "data": {
+        "text": "Cloud CDN - Netlify",
+        "level": 3
+      }
+    },
+    {
+      "id": "p9qeGioSiO",
+      "type": "paragraph",
+      "data": {
+        "text": "We need a cloud CDN to serve our static app. There are many available and most offer a free tier of service. That free tier may satisfy a domainer's parking needs forever. For a startup it will certainly get them out of the gate, on a platform that should be able to take them all the way to the finish line."
+      }
+    },
+    {
+      "id": "x8qhF1n2c1",
+      "type": "header",
+      "data": {
+        "text": "DNS Provider - Registrars",
+        "level": 3
+      }
+    },
+    {
+      "id": "407vAwH083",
+      "type": "paragraph",
+      "data": {
+        "text": "You will need to point your domain names at the CDN service. This varies depending upon the registrar and the CDN provider chosen. I use the DNS provided my registrars where possible. Some CDN like Netlify can support your DNS as well."
+      }
+    },
+    {
+      "id": "UjehNS1may",
+      "type": "paragraph",
+      "data": {
+        "text": "I followed the direction Netlify provided and was able to point domains from multiple registrars at their service just fine."
+      }
+    }
+  ]
+}
