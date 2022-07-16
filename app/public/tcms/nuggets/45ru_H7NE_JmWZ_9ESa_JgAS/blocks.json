@@ -11,6 +11,8 @@
         "www.opensourcebike.com": "opensourcebike",
         "www.tachyoncms.com": "tachyoncms-com",
         "www.etownmall.com": "etownmall",
+        "www.maxpets.com": "maxpets",
+        "www.securitymavens.com": "securitymavens",
         "etownmall.com": "etownmall",
         "bikemechanic.info": "bikemechanic",
         "ezvegetarian.com": "ezvegetarian",
@@ -18,6 +20,8 @@
         "netrealestateguide.com": "netrealestateguide",
         "opensourcebike.com": "opensourcebike",
         "tachyoncms.com": "tachyoncms-com",
+        "maxpets.com": "maxpets",
+        "securitymavens.com": "securitymavens",
         "localhost": "dev"
       }
     },
@@ -32,6 +36,8 @@
         "opensourcebike": "DCZ2_7T9c_HAr6_TLa4_zzc9",
         "tachyoncms-com": "wWap_bxAI_Gg6N_DJoF_g8Ib",
         "etownmall": "SUok_qLLO_5H4g_kAFK_cKPx",
+        "maxpets": "d7hc_LtbN_fLno_5u1V_hJvu",
+        "securitymavens": "G59S_LuzY_scOT_taa5_dPu6",
         "dev": "z2LP_8che_ypUi_uNID_JEs3"
       }
     }

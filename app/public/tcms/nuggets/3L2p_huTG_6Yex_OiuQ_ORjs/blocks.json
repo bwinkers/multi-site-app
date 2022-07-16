@@ -1,0 +1,23 @@
+{
+  "blocks": [
+    {
+      "id": "Uhxo0rJwVd",
+      "type": "paragraph",
+      "data": {
+        "text": "<a href=\"/#/audit-ally\">Audit Ally</a>&nbsp;makes maintaining evidence of routine security procedures easy."
+      }
+    },
+    {
+      "id": "meelHRN4Bb",
+      "type": "list",
+      "data": {
+        "style": "unordered",
+        "items": [
+          "Zero install - no installation or upgrades required.",
+          "No fees, no limits&nbsp;- one project or one thousand, the cost is the same, $0.",
+          "Secure - the data never leaves your computer. On disk encryption coming!"
+        ]
+      }
+    }
+  ]
+}
