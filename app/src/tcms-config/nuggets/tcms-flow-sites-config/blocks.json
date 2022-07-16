@@ -14,7 +14,9 @@
           "www.opensourcebike.com": "osb",
           "www.tachyoncms.com": "tachyoncms-com",
           "www.etownmall.com": "etownmall",
-          "www.izzup.com": "izzup"
+          "www.izzup.com": "izzup",
+          "www.securitymavens.com": "securitymavens",
+          "www.maxpets.com": "maxpets"
         },
         "siteFlows": {
           "bikemechanic": "gGc3_MzRV_FQOU_QTzu_U3Ze",
@@ -25,6 +27,8 @@
           "tachyoncms-com": "wWap_bxAI_Gg6N_DJoF_g8Ib",
           "etownmall": "SUok_qLLO_5H4g_kAFK_cKPx",
           "dev": "z2LP_8che_ypUi_uNID_JEs3",
+          "maxpets": "d7hc_LtbN_fLno_5u1V_hJvu",
+          "securitymavens": "UCao_z8XU_uUxB_rM1Q_W7eA",
           "izzup": "Llu2_iPdV_GfZs_wvux_Q1w0"
         }
       }
